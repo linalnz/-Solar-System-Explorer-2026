@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar System Explorer 2026 - by Lina</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🌌 Solar System Explorer 2026</h1>
+<p>by Lina</p>
+
+<div class="planets">
+
+<div class="planet" onclick="showPlanet('Mercury')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg">
+<p>Mercury</p>
+</div>
+
+<div class="planet" onclick="showPlanet('Venus')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg">
+<p>Venus</p>
+</div>
+
+<div class="planet" onclick="showPlanet('Earth')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg">
+<p>Earth</p>
+</div>
+
+<div class="planet" onclick="showPlanet('Moon')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg">
+<p>Moon</p>
+</div>
+
+<div class="planet" onclick="showPlanet('Mars')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg">
+<p>Mars</p>
+</div>
+
+<div class="planet" onclick="showPlanet('Jupiter')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg">
+<p>Jupiter</p>
+</div>
+
+<div class="planet" onclick="showPlanet('Saturn')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg">
+<p>Saturn</p>
+</div>
+
+<div class="planet" onclick="showPlanet('Uranus')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg">
+<p>Uranus</p>
+</div>
+
+<div class="planet" onclick="showPlanet('Neptune')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg">
+<p>Neptune</p>
+</div>
+
+</div>
+
+<div id="infoBox" class="info-box">
+<h2 id="planetName"></h2>
+<img id="planetImage">
+<p id="planetInfo"></p>
+<button onclick="closeInfo()">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

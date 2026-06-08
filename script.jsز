@@ -1,0 +1,59 @@
+const planets = {
+
+Mercury:{
+image:"https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg",
+info:"Mercury is the closest planet to the Sun."
+},
+
+Venus:{
+image:"https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg",
+info:"Venus is the hottest planet in the Solar System."
+},
+
+Earth:{
+image:"https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg",
+info:"Earth is the only known planet with life."
+},
+
+Moon:{
+image:"https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg",
+info:"The Moon is Earth's natural satellite."
+},
+
+Mars:{
+image:"https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg",
+info:"Mars is known as the Red Planet."
+},
+
+Jupiter:{
+image:"https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg",
+info:"Jupiter is the largest planet."
+},
+
+Saturn:{
+image:"https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg",
+info:"Saturn is famous for its rings."
+},
+
+Uranus:{
+image:"https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg",
+info:"Uranus rotates on its side."
+},
+
+Neptune:{
+image:"https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg",
+info:"Neptune is the farthest planet from the Sun."
+}
+
+};
+
+function showPlanet(name){
+document.getElementById("planetName").innerText=name;
+document.getElementById("planetImage").src=planets[name].image;
+document.getElementById("planetInfo").innerText=planets[name].info;
+document.getElementById("infoBox").style.display="block";
+}
+
+function closeInfo(){
+document.getElementById("infoBox").style.display="none";
+}
